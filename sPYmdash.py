@@ -1,17 +1,7 @@
-from distutils.command.upload import upload
 import time,requests,random,os,base64,hashlib
 from itertools import cycle
-from urllib3 import connection
 from json import loads
 from threading import Thread
-
-def request(self, method, url, body=None, headers=None):
-    if headers is None:
-        headers = {}
-    else:
-        headers = headers.copy()
-    super(connection.HTTPConnection, self).request(method, url, body=body, headers=headers)
-connection.HTTPConnection.request = request
 
 def comment_chk(*,username,comment,levelid,percentage,type):
         part_1 = username + comment + levelid + str(percentage) + type + "xPT6iUrtws0J"
