@@ -1,7 +1,7 @@
 # sPYmdash
-SPAMDASH by Sevenworks, rewritten in Python.
+SPAMDASH by Sevenworks, rewritten in Python. (Now with a GUI!)
 
-# How to use
+# How to use console version
 Download the prebuilt release or download the .py script. After that, create a new file named config.dat. Enter your GD username and password, the comment you want to post, the percentage and the interval between comment posts (in miliseconds) in the following format:
 username;password;comment;percentage;interval
 
